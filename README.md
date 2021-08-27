@@ -8,13 +8,26 @@ https://drive.google.com/file/d/1T6I9KeJscSln3ECcwlrcklDJFclBjEED/view
 ## NPM Run Develop
 This will run the app
 
-## Packages Used
-concurrently
-apollo-link-context
-graphql
-graphql-tag
-jwt-decode
-react
-react-dom
-react-router-dom
-react-scripts
+## NPM Packages Used
+- Develop Directory
+  - concurrently
+- Client Directory
+  - apollo/react-hooks
+  - -stripe/stripe-js
+  - apollo-boost
+  - apollo-link-context
+  - graphql
+  - graphql-tag
+  - jwt-decode
+  - react
+  - react-dom
+  - react-router-dom
+  - react-scripts
+- Server Directory
+  - bcrypt
+  - express
+  - graphql
+  - jsonwebtoken
+  - mongoose
+  - apollo-server-express
+  - stripe
