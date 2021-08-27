@@ -9,7 +9,7 @@ import {
   UPDATE_CART_QUANTITY,
   ADD_TO_CART,
   UPDATE_PRODUCTS,
-} from "../utils/actions";
+} from "../utils/action";
 import { QUERY_PRODUCTS } from "../utils/queries";
 import { idbPromise } from "../utils/helpers";
 import spinner from '../assets/spinner.gif'
