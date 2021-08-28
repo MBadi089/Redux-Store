@@ -1,5 +1,5 @@
 # Redux-Store
-This app is designed to manage global state using React's Context API. This app lets the user look through a shopping page, select items to place in the cart, and put credit card information in the checkout page. 
+This app is designed to manage global state using React's Context API so I modified it using redux instead. This app lets the user look through a shopping page, select items to place in the cart, and put credit card information in the checkout page. 
 ## App Image
 ![Screenshot (115)](https://user-images.githubusercontent.com/79673757/131188603-9169ff4b-5b2e-4ceb-86fc-90fbbc2ebb9e.png)
 
