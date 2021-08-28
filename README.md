@@ -32,4 +32,4 @@ This will run the app
   - apollo-server-express
   - stripe
 ## Deployed App
-Heroku https://git.heroku.com/reduxstore2.git
+Heroku https://git.heroku.com/nameless-sierra-73603.git
