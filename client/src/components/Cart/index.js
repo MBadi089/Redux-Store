@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
-// import { useLazyQuery } from '@apollo/react-hooks';
-// import { QUERY_CHECKOUT } from "../../utils/queries"
+ import { useLazyQuery } from '@apollo/react-hooks';
+ import { QUERY_CHECKOUT } from "../../utils/queries"
 import { idbPromise } from "../../utils/helpers"
 import CartItem from "../CartItem";
 import Auth from "../../utils/auth";
@@ -14,7 +14,7 @@ const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
   // const [state, dispatch] = useStoreContext();
-  // const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT); 
+   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT); 
   const dispatch = useDispatch();
   const state = useSelector(state => state); // this replaces reacts useStoreContext
 
