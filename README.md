@@ -31,3 +31,5 @@ This will run the app
   - mongoose
   - apollo-server-express
   - stripe
+## Deployed App
+Heroku https://git.heroku.com/reduxstore2.git
