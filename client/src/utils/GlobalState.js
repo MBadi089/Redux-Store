@@ -21,3 +21,6 @@ const useStoreContext = () => {
 };
 
 export { StoreProvider, useStoreContext };
+
+//no longer using react's GlobalState. 
+//I am using redux's useDispatch and useSelector

@@ -5,15 +5,18 @@ import { QUERY_CHECKOUT } from "../../utils/queries"
 import { idbPromise } from "../../utils/helpers"
 import CartItem from "../CartItem";
 import Auth from "../../utils/auth";
-import { useStoreContext } from "../../utils/GlobalState";
+// import { useStoreContext } from "../../utils/GlobalState";
+import { useDispatch, useSelector } from 'react-redux'; //this replaces react's useStoreContext
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/action";
 import "./style.css";
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
-  const [state, dispatch] = useStoreContext();
-  const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+  // const [state, dispatch] = useStoreContext();
+  // const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT); 
+  const dispatch = useDispatch();
+  const state = useSelector(state => state); // this replaces reacts useStoreContext
 
   useEffect(() => {
     if (data) {
